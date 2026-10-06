@@ -1,0 +1,117 @@
+{
+    "clean_baseline": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "confusion_matrix": [
+            [
+                720,
+                0
+            ],
+            [
+                0,
+                480
+            ]
+        ]
+    },
+    "adversarial_result": {
+        "epsilon": 0.15,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "attack_success_rate": 0.0,
+        "confusion_matrix": [
+            [
+                720,
+                0
+            ],
+            [
+                0,
+                480
+            ]
+        ]
+    },
+    "confidence_change": {
+        "mean_confidence_drop": 0.0020337924361228943,
+        "median_confidence_drop": 0.000393599271774292
+    },
+    "scenario_detection": {
+        "threshold_tau": 5.986193879614195,
+        "detection_accuracy": 0.6091666666666666,
+        "detection_precision": 0.8429319371727748,
+        "detection_recall_tpr": 0.2683333333333333,
+        "detection_f1": 0.40707964601769914,
+        "detection_roc_auc": 0.77774375,
+        "confusion_matrix": [
+            [
+                1140,
+                60
+            ],
+            [
+                878,
+                322
+            ]
+        ]
+    },
+    "validity_checks": {
+        "epsilon": 0.15,
+        "max_linf": 0.15000003576278687,
+        "mean_l2": 0.6119043827056885,
+        "mean_l1": 2.508467674255371,
+        "bounds_pass": true,
+        "linf_pass": true
+    },
+    "epsilon_sweep": [
+        {
+            "epsilon": 0.0,
+            "accuracy": 1.0,
+            "asr": 0.0,
+            "mean_conf_drop": 0.0,
+            "detection_tpr": 0.0
+        },
+        {
+            "epsilon": 0.05,
+            "accuracy": 1.0,
+            "asr": 0.0,
+            "mean_conf_drop": 4.766856727655977e-05,
+            "detection_tpr": 0.051666666666666666
+        },
+        {
+            "epsilon": 0.1,
+            "accuracy": 1.0,
+            "asr": 0.0,
+            "mean_conf_drop": 0.00031391173251904547,
+            "detection_tpr": 0.10666666666666667
+        },
+        {
+            "epsilon": 0.15,
+            "accuracy": 1.0,
+            "asr": 0.0,
+            "mean_conf_drop": 0.0020337924361228943,
+            "detection_tpr": 0.2683333333333333
+        },
+        {
+            "epsilon": 0.2,
+            "accuracy": 1.0,
+            "asr": 0.0,
+            "mean_conf_drop": 0.012110354378819466,
+            "detection_tpr": 0.5225
+        },
+        {
+            "epsilon": 0.25,
+            "accuracy": 0.98,
+            "asr": 0.02,
+            "mean_conf_drop": 0.05581485852599144,
+            "detection_tpr": 0.73
+        },
+        {
+            "epsilon": 0.3,
+            "accuracy": 0.8933333333333333,
+            "asr": 0.10666666666666667,
+            "mean_conf_drop": 0.1847856342792511,
+            "detection_tpr": 0.8891666666666667
+        }
+    ]
+}

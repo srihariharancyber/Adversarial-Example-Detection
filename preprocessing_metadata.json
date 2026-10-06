@@ -1,0 +1,42 @@
+{
+    "dataset_name": "Cybersecurity Intrusion Detection Benchmark (Scenario 51)",
+    "total_samples": 6000,
+    "train_samples": 4800,
+    "test_samples": 1200,
+    "num_features": 23,
+    "feature_names": [
+        "duration",
+        "src_bytes",
+        "dst_bytes",
+        "count",
+        "srv_count",
+        "serror_rate",
+        "rerror_rate",
+        "same_srv_rate",
+        "diff_srv_rate",
+        "dst_host_count",
+        "dst_host_srv_count",
+        "dst_host_same_srv_rate",
+        "dst_host_serror_rate",
+        "num_failed_logins",
+        "logged_in",
+        "protocol_type_ICMP",
+        "protocol_type_TCP",
+        "protocol_type_UDP",
+        "service_DNS",
+        "service_FTP",
+        "service_HTTP",
+        "service_HTTPS",
+        "service_SSH"
+    ],
+    "feature_bounds": {
+        "min": 0.0,
+        "max": 1.0
+    },
+    "target_column": "label",
+    "classes": {
+        "0": "Benign / Normal",
+        "1": "Malicious / Attack"
+    },
+    "random_state": 42
+}
